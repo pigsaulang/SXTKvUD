@@ -11,6 +11,7 @@ z_score = (f - p) / std_dev
 from scipy import stats
 p_one_way_value = 1 - stats.norm.cdf(z_score)
 p_value = p_one_way_value * 2 
+print("THỰC HÀNH 15")
 print(p_value)
 ##Ta có p-value gần bằng 0.01. Nó có ý nghĩa là giả sử 6% người lớn ở Hà Nội đi làm bằng xe đạp, khả năng ta lấy được một mẫu ngẫu nhiên có 10% người Hà Nội đi làm bằng xe đạp là 1%.
 ##Kiểm tra p-value với mức ý nghĩa là 0.05, như định nghĩa ở trên. P_value < muc_y_nghia=0.05 (P_value ≈ . 1)
