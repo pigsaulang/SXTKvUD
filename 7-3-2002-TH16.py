@@ -1,5 +1,4 @@
 import math
-from ossaudiodev import SOUND_MIXER_ALTPCM
 tong_mau = 300
 so_mau = 30
 p = 0.06
@@ -13,3 +12,5 @@ from scipy import stats
 p_one_way_value = 1 - stats.norm.cdf(z_score)
 p_value = p_one_way_value * 2
 print(p_value)
+## giá trị p_value xấp xỉ = 5% khác với mức ý nghĩa là 6%
+## bác bỏ giã thuyết "Tỷ lệ người lớn ở Hà Nội đi làm việc bằng xe đạp là 6%"
